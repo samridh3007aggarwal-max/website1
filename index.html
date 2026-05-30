@@ -18,7 +18,7 @@ html,body{height:100%;font-family:'DM Sans',sans-serif;overflow:hidden;backgroun
 .screen{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity 0.9s ease;overflow:hidden;}
 .screen.active{opacity:1;pointer-events:all;}
 
-/* ── BACKGROUNDS1 ── */
+/* ── BACKGROUNDS ── */
 #s1{background:linear-gradient(145deg,#f5d5ea 0%,#e8bcd8 40%,#d4a0c8 100%);}
 #s2{background:linear-gradient(160deg,#fce7f3 0%,#f3d4ea 50%,#ead0ee 100%);}
 #s3{background:#fce7f3;}
@@ -702,7 +702,7 @@ function handleYes() {
 // ══ COUNTDOWN + LOCK ══
 function getTarget() {
   const now = new Date();
-  const t = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 21, 50, 0, 0);
+  const t = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 21, 51, 0, 0);
   if(t < now) t.setDate(t.getDate()+1);
   return t;
 }
